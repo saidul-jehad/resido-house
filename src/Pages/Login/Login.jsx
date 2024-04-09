@@ -4,16 +4,25 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
 
-    const {name } = useContext(AuthContext)
-    console.log(name); 
+    const { loginUser } = useContext(AuthContext)
+    // console.log(name); 
 
     const handleLogin = e => {
         e.preventDefault()
 
         const email = e.target.email.value;
         const password = e.target.password.value;
-
         console.log(email, password);
+
+
+        // login User
+        loginUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
     }
     return (
         <div className="hero min-h-screen bg-base-200 ">
