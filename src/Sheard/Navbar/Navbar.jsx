@@ -42,7 +42,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Resido House</a>
+                <a className="btn btn-ghost text-xl"> <img className="h-8 w-7" src="/public/logo.jpeg" alt="" />Resido House</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

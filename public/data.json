@@ -12,7 +12,8 @@
             "Living room",
             "Garden",
             "Garage"
-        ]
+        ],
+        "image": "https://t4.ftcdn.net/jpg/06/41/79/81/360_F_641798173_9ZxJ3ChOAeYEgaCi14eu5VFRjKEh7VhJ.jpg"
     },
     {
         "id": 2,
@@ -27,7 +28,8 @@
             "Living room",
             "Rooftop terrace",
             "Parking"
-        ]
+        ],
+        "image": "https://media.istockphoto.com/id/1393538022/photo/modern-townhouse-design.jpg?s=612x612&w=0&k=20&c=JA6u4z_Mj2ZWHKPJqnATqpUPlrGBzavUXRhNE-5RYTw="
     },
     {
         "id": 3,
@@ -42,7 +44,8 @@
             "Living room",
             "Gym",
             "Swimming pool"
-        ]
+        ],
+        "image": "https://media.istockphoto.com/id/1357037904/photo/night-scene-modern-living-room-with-metropolis-view-background-3d-render.jpg?s=612x612&w=0&k=20&c=yEgNdJTppFayIiiXyiCLGLH9g9Ro6Oiv2DLUxUduS5w="
     },
     {
         "id": 4,
@@ -57,7 +60,8 @@
             "Study area",
             "Common room",
             "Laundry facilities"
-        ]
+        ],
+        "image": "https://c0.wallpaperflare.com/preview/271/258/330/room-student-dorm-room.jpg"
     },
     {
         "id": 5,
@@ -72,7 +76,8 @@
             "Dining hall",
             "Healthcare services",
             "Recreation room"
-        ]
+        ],
+        "image": "https://media.istockphoto.com/id/157677909/photo/nurse-or-doctor-pushing-a-wheelchair-outdoors.jpg?s=612x612&w=0&k=20&c=t2H7lO8cuQ1pCeFJYk-on-G2J6AVujKnhF72yK_t0zM="
     },
     {
         "id": 6,
@@ -87,7 +92,8 @@
             "Private pool",
             "Beach access",
             "Outdoor dining area"
-        ]
+        ],
+        "image": "https://w0.peakpx.com/wallpaper/644/975/HD-wallpaper-luxurious-beach-villa-architecture-retreat-villa-sea-palm-trees-beach-modern-swimming-luxury-exotic-islands-ocean-escape-pool-paradise-spa-island-tropical-luxurious.jpg"
     },
     {
         "id": 7,
@@ -102,7 +108,8 @@
             "Gym",
             "24/7 security",
             "Parking"
-        ]
+        ],
+        "image": "https://thumbs.cityrealty.com/assets/smart/1004x/webp/2/22/22ca6350cd0dcc474556e1e06bd8144482a45135/15-central-park-west-01.jpg"
     },
     {
         "id": 8,
@@ -117,7 +124,8 @@
             "Fireplace",
             "Private yard",
             "Parking"
-        ]
+        ],
+        "image": "https://ssl.cdn-redfin.com/photo/118/mbphoto/907/genMid.T3479907_1_5.jpg"
     },
     {
         "id": 9,
@@ -132,6 +140,7 @@
             "Community room",
             "Garden",
             "Laundry facilities"
-        ]
+        ],
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20231010/pngtree-3d-rendering-of-a-cozy-home-workspace-image_13595030.png"
     }
 ]

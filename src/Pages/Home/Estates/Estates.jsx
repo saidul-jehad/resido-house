@@ -7,7 +7,7 @@ const Estates = () => {
     const [estates, setEstates] = useState([])
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('https://saidul24.github.io/estate-json-data/data.json')
             .then(res => res.json())
             .then(data => setEstates(data))
     }, [])

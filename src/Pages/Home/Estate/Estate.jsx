@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
 import { SlLocationPin } from "react-icons/sl";
+import { Link } from 'react-router-dom';
 
 const Estate = ({ estate }) => {
-    const { id, estate_title, segment_name, description, price, status, area, facilities, location } = estate
+    const { id, estate_title, segment_name, description, price, status, area, facilities, location, image } = estate
     return (
         <div className="card border bg-base-100 shadow-xl">
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div className='p-5 '>
+                <img className='rounded-xl' src={image} alt="" />
+            </div>
 
             <div className="card-body">
                 <h2 className="card-title gap-6 flex justify-between">
@@ -32,7 +35,8 @@ const Estate = ({ estate }) => {
                 </div>
 
                 <div className='justify-end flex  mt-2'>
-                    <button className=' btn px-5 btn-info '>View</button>
+
+                    <Link to={`/estateDetails/${id}`}><button className=' btn px-5 btn-info '>View</button></Link>
                 </div>
             </div>
             {/* <div className="badge badge-secondary">NEW</div> */}
