@@ -29,12 +29,12 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                // console.log(result.user);
+                console.log(result.user);
             })
             .catch(error => {
                 setLoginError('Email and Password dose not match')
                 toast.error('Email and Password dose not match')
-                // console.log(error.message);
+                console.log(error.message);
             })
     }
 
@@ -43,12 +43,12 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                // console.log(result.user);
+                console.log(result.user);
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
                 // toast.error('Email and Password dose not match')
-                // console.log(error.message);
+                console.log(error.message);
             })
 
     }
@@ -58,15 +58,14 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                // console.log(result.user);
+                console.log(result.user);
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
                 // toast.error('Email and Password dose not match')
-                // console.log(error.message);
+                console.log(error.message);
             })
     }
-
 
 
     return (
@@ -74,7 +73,7 @@ const Login = () => {
             <div className="hero-content flex-col md:w-1/2">
 
                 <div className="text-center">
-                    <h1 className="text-5xl font-bold">Register now!</h1>
+                    <h1 className="text-5xl font-bold">Login now!</h1>
                 </div>
 
                 <div className="card shrink-0 w-full shadow-2xl bg-base-100 ">
@@ -130,7 +129,7 @@ const Login = () => {
 
                     <p className="text-center">
                         <small>
-                            Already Have Account? Please <Link to='/login' className="btn btn-link">Login</Link>
+                            Resido House new? Please <Link to='/register' className="btn btn-link">Register</Link>
                         </small>
                     </p>
                 </div>

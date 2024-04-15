@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Cozy Family Home with Garden",
+        "segment_name": "Single-family Home",
+        "description": "This charming 3-bedroom home boasts a spacious living area, perfect for family gatherings. The beautifully landscaped garden provides a serene retreat, ideal for outdoor relaxation and entertaining guests. With modern amenities and a convenient location in a peaceful suburban neighborhood, this home offers both comfort and convenience.",
+        "price": "$35000",
+        "status": "sale",
+        "area": "2,500 sq ft",
+        "location": "Suburban neighborhood, City X",
+        "facilities": [
+            "Living room",
+            "Garden",
+            "Garage"
+        ]
+    },
+    {
+        "id": 2,
+        "estate_title": "Modern Townhouse in Downtown",
+        "segment_name": "Townhouse",
+        "description": "Experience urban living at its finest in this sleek and modern townhouse. Featuring 3 bedrooms, a spacious living area, and a rooftop terrace with stunning city views, this property offers the perfect blend of style and functionality. Situated in the heart of downtown, residents enjoy easy access to dining, shopping, and entertainment venues.",
+        "price": "$50000",
+        "status": "sale",
+        "area": "2,200 sq ft",
+        "location": "Downtown, City Y",
+        "facilities": [
+            "Living room",
+            "Rooftop terrace",
+            "Parking"
+        ]
+    },
+    {
+        "id": 3,
+        "estate_title": "Sumi Apartment with City Views",
+        "segment_name": "Apartment",
+        "description": "Indulge in sumi living with this stunning 2-bedroom apartment boasting panoramic city views. The spacious interior features high-end finishes and modern amenities, including a fully equipped kitchen and luxurious bathrooms. Residents have access to exclusive building amenities such as a fitness center, swimming pool, and concierge services, all located in the vibrant city center.",
+        "price": "$25000",
+        "status": "rent",
+        "area": "1,200 sq ft",
+        "location": "City Center, City Z",
+        "facilities": [
+            "Living room",
+            "Gym",
+            "Swimming pool"
+        ]
+    },
+    {
+        "id": 4,
+        "estate_title": "Modern Student Dormitory",
+        "segment_name": "Student Housing",
+        "description": "Designed for student comfort and convenience, this modern dormitory offers fully furnished rooms equipped with study areas and ample storage space. The communal areas feature comfortable lounges and study rooms, providing opportunities for socializing and collaborative learning. Located within walking distance of the university campus, residents enjoy easy access to campus facilities and nearby amenities.",
+        "price": "$8000",
+        "status": "rent",
+        "area": "250 sq ft (per room)",
+        "location": "Near University Campus, City W",
+        "facilities": [
+            "Study area",
+            "Common room",
+            "Laundry facilities"
+        ]
+    },
+    {
+        "id": 5,
+        "estate_title": "Retirement Community Living",
+        "segment_name": "Senior Living Community",
+        "description": "Experience a vibrant and supportive community for seniors in this comfortable and secure retirement community. Residents enjoy a range of amenities and services tailored to their needs, including chef-prepared meals, fitness programs, and recreational activities. With onsite healthcare services and a caring staff, residents can enjoy peace of mind and a fulfilling lifestyle in their golden years.",
+        "price": "$3,0000",
+        "status": "rent",
+        "area": "1,500 sq ft",
+        "location": "Senior Living Community, City P",
+        "facilities": [
+            "Dining hall",
+            "Healthcare services",
+            "Recreation room"
+        ]
+    },
+    {
+        "id": 6,
+        "estate_title": "Seaside Villa Escape",
+        "segment_name": "Vacation Rental",
+        "description": "Escape to paradise with this luxurious beachfront villa offering breathtaking ocean views and direct access to the sandy shores. The spacious interior is elegantly furnished and equipped with modern amenities, while the outdoor area features a private pool, sun deck, and alfresco dining space. Whether you're seeking relaxation or adventure, this villa provides the ultimate coastal retreat.",
+        "price": "$5000",
+        "status": "rent",
+        "area": "3,000 sq ft",
+        "location": "Beachfront, Coastal Town Q",
+        "facilities": [
+            "Private pool",
+            "Beach access",
+            "Outdoor dining area"
+        ]
+    },
+    {
+        "id": 7,
+        "estate_title": "Downtown Condo with Skyline Views",
+        "segment_name": "Condominium",
+        "description": "Live in luxury in this modern 1-bedroom condo boasting stunning skyline views and upscale amenities. The open-concept living space is perfect for entertaining, while the gourmet kitchen features high-end appliances and sleek finishes. Residents have access to a state-of-the-art gym, 24/7 security, and convenient parking, all within the vibrant downtown area.",
+        "price": "$60000",
+        "status": "sale",
+        "area": "900 sq ft",
+        "location": "Downtown, City R",
+        "facilities": [
+            "Gym",
+            "24/7 security",
+            "Parking"
+        ]
+    },
+    {
+        "id": 8,
+        "estate_title": "Charming Duplex in Historic District",
+        "segment_name": "Duplex",
+        "description": "Step back in time with this historic 2-unit duplex featuring original architectural details and modern upgrades. Each unit offers spacious living areas, cozy fireplaces, and private yards, perfect for enjoying the outdoors. Situated in the heart of the historic district, residents can explore quaint shops, cafes, and cultural attractions just steps from their doorstep.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2,800 sq ft",
+        "location": "Historic District, City S",
+        "facilities": [
+            "Fireplace",
+            "Private yard",
+            "Parking"
+        ]
+    },
+    {
+        "id": 9,
+        "estate_title": "Cozy Co-op Apartment",
+        "segment_name": "Co-op Housing",
+        "description": "Embrace community living in this cozy co-op apartment building offering shared amenities and engaging activities. Residents enjoy access to a communal room for gatherings, a serene garden for relaxation, and convenient laundry facilities. Located within a welcoming co-op community, residents forge lasting friendships and create cherished memories in this inviting environment.",
+        "price": "$200,000",
+        "status": "sale",
+        "area": "1,000 sq ft",
+        "location": "Co-op Community, City T",
+        "facilities": [
+            "Community room",
+            "Garden",
+            "Laundry facilities"
+        ]
+    }
+]

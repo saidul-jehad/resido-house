@@ -1,0 +1,6 @@
+.banner-bg{
+    background: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%),url('https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-small-apartment-home-interior-decoration-style-photography-map-with-map-image_794336.jpg');
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    height: 700px;
+}

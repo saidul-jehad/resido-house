@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
 
 const Navbar = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
+
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -12,6 +14,21 @@ const Navbar = () => {
         <li><NavLink to='/login'>Login</NavLink></li>
         <li><NavLink to='/register'>Register</NavLink></li>
     </>
+
+
+    const handleLogOut = () => {
+        logOut()
+            .then(result => {
+                // logOut("You have successfully logged in")
+                // toast.success("You have successfully logged in")
+                console.log(result.user);
+            })
+            .catch(error => {
+                // setLoginError('Email and Password dose not match')
+                // toast.error('Email and Password dose not match')
+                console.log(error.message);
+            })
+    }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -37,9 +54,12 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 {
-                    user ? <div> {user.displayName} {user.email} <Link to='/login' className="btn btn-info">LogOut</Link> </div> :
+                    user ? <div className="flex  items-center gap-3 md:gap-6 ">
+                        <p className="text-xl font-medium md:font-semibold hidden md:flex">{user.displayName}</p>
+                        <img data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName} className="h-14 w-14 rounded-full" src={user.photoURL} alt="" /> <div onClick={handleLogOut}><Link to='/login' className="btn btn-info">LogOut</Link></div> </div> :
                         <Link to='/login' className="btn btn-info">Login</Link>
                 }
+                <Tooltip id="my-tooltip" />
             </div>
         </div>
     );

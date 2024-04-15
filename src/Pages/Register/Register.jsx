@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUserProfile } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false)
     const [passwordError, setPasswordError] = useState('')
     const [registerError, setRegisterError] = useState('')
@@ -26,7 +26,7 @@ const Register = () => {
         setPasswordError('')
         setRegisterError('')
         setRegisterSuccess('')
-        
+
 
         if (password.length < 6) {
             setPasswordError('Password at least 6 character')
@@ -50,9 +50,11 @@ const Register = () => {
         // create user
         createUser(email, password)
             .then(result => {
+                updateUserProfile(name, photoUrl, email)
+
                 setRegisterSuccess('Account successfully created')
                 toast.success('Account successfully created')
-                // console.log(result.user);
+                console.log(result.user);
             })
             .catch(error => {
                 setRegisterError(error.message)

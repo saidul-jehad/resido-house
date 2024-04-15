@@ -3,7 +3,7 @@ import Navbar from "../Sheard/Navbar/Navbar";
 
 const Root = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <Navbar></Navbar>
             <Outlet />
         </div>
