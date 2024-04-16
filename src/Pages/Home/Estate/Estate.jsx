@@ -25,7 +25,7 @@ const Estate = ({ estate }) => {
                 <div className="card-actions">
 
                     {
-                        facilities.map((facilitie, idx) => <div key={idx} className="badge badge-outline">{facilitie}</div>)
+                        facilities.map((facilitie, idx) => <div key={idx} className="badge badge-outline bg-green-600 text-white">{facilitie}</div>)
                     }
                 </div>
 

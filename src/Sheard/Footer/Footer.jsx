@@ -25,7 +25,7 @@ const Footer = () => {
             </footer>
             <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
                 <aside className="items-center grid-flow-col">
-                    <p>© 2024 Resido. All rights reserved by Saidul Hasan Jihad</p>
+                    <p>© 2024 Resido House. All rights reserved by Saidul Hasan Jihad</p>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
