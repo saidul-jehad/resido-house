@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { LuEye, LuEyeOff } from "react-icons/lu";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,6 +7,9 @@ import { FaGoogle, FaGithub } from "react-icons/fa6";
 
 
 const Login = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log('login page', location);
 
     const { loginUser, googleLogin, githubLogin } = useContext(AuthContext)
     const [showPassword, setShowPassword] = useState(false)
@@ -30,6 +33,7 @@ const Login = () => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 setLoginError('Email and Password dose not match')
@@ -44,6 +48,8 @@ const Login = () => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/')
+
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
@@ -59,6 +65,8 @@ const Login = () => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/')
+
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
@@ -69,7 +77,7 @@ const Login = () => {
 
 
     return (
-        <div className="hero min-h-screen bg-base-200 ">
+        <div className={`hero min-h-screen bg-base-200`}>
             <div className="hero-content flex-col md:w-1/2">
 
                 <div className="text-center">

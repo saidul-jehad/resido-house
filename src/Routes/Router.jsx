@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/Error/Error";
 import EstateDetails from "../Pages/Home/EstateDetails/EstateDetails";
+import ProtectedRoutes from "./ProtectedRoutes";
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/estateDetails/:id',
-                element: <EstateDetails></EstateDetails>,
+                element: <ProtectedRoutes><EstateDetails></EstateDetails></ProtectedRoutes>,
                 loader: () => fetch('https://saidul24.github.io/estate-json-data/data.json')
 
             }
