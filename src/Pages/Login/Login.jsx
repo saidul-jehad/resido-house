@@ -4,7 +4,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { LuEye, LuEyeOff } from "react-icons/lu";
 import { ToastContainer, toast } from 'react-toastify';
 import { FaGoogle, FaGithub } from "react-icons/fa6";
-
+import {Helmet} from "react-helmet";
 
 const Login = () => {
     const location = useLocation()
@@ -77,6 +77,7 @@ const Login = () => {
 
     return (
         <div className={`hero min-h-screen bg-base-200`}>
+            <Helmet><title>Resido | Login</title></Helmet>
             <div className="hero-content flex-col md:w-1/2">
 
                 <div className="text-center">

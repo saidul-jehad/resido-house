@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'animate.css';
@@ -13,8 +13,12 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import { AuthContext } from '../../../Provider/AuthProvider';
 
 const Banner = () => {
+
+    const {clickMenu} = useContext(AuthContext)
+    
     return (
         <>
             <Swiper
@@ -26,7 +30,7 @@ const Banner = () => {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper mt-14"
+                className={`mySwiper mt-14 ${clickMenu ? 'mt-32': 'mt-10' }`}
             >
                 <SwiperSlide>
                     <div className=" flex items-center justify-center flex-col gap-5 text-white bg-[url('https://cdna.artstation.com/p/assets/images/images/015/507/918/large/ahmed-mohamed-finish.jpg')] min-h-[700px] bg-no-repeat bg-cover">

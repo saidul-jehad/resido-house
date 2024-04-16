@@ -1,11 +1,13 @@
 import Banner from "./Banner/Banner";
 import Estates from "./Estates/Estates";
+import { Helmet } from "react-helmet";
+
 
 const Home = () => {
     return (
         <div>
-            <h3>this is home</h3>
 
+            <Helmet><title>Resido | Home</title></Helmet>
 
             <Banner></Banner>
 

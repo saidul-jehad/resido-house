@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { SlLocationPin } from "react-icons/sl";
 import { Link } from 'react-router-dom';
-
+import 'animate.css';
 const Estate = ({ estate }) => {
-    const { id, estate_title, segment_name, description, price, status, area, facilities, location, image } = estate
+    const { id, estate_title, price, status, facilities, location, image } = estate
     return (
-        <div className="card border bg-base-100 shadow-xl">
+        <div className={`card border bg-base-100 shadow-xl animate__animated animate__delay-1s ${id % 2 === 0 ? 'animate__lightSpeedInRight' : 'animate__lightSpeedInLeft'}`} >
             <div className='p-5 '>
                 <img className='rounded-xl' src={image} alt="" />
             </div>

@@ -4,6 +4,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { LuEye, LuEyeOff } from "react-icons/lu";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {Helmet} from "react-helmet";
 
 const Register = () => {
 
@@ -66,6 +67,7 @@ const Register = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col md:w-1/2">
+            <Helmet><title>Resido | Register</title></Helmet>
 
                 <div className="text-center">
                     <h1 className="text-5xl font-bold">Register now!</h1>

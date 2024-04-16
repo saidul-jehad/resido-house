@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
-
+import {Helmet} from "react-helmet";
 
 const EstateDetails = () => {
     const estates = useLoaderData()
@@ -19,6 +19,7 @@ const EstateDetails = () => {
                     <img className="w-full h-full rounded-xl" src={image} alt="" />
                 </div>
 
+                <Helmet><title>Resido | Estate Details</title></Helmet>
 
 
 

@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [clickMenu , setClickMenu] = useState(false)
 
     const createUser = (email, password) => {
         setLoading(true)
@@ -61,6 +62,8 @@ const AuthProvider = ({ children }) => {
 
 
     const authInfo = {
+        setClickMenu,
+        clickMenu,
         loading,
         user,
         createUser,
