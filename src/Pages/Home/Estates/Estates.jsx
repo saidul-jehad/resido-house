@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Estate from "../Estate/Estate";
-
+import 'animate.css';
 
 const Estates = () => {
 
@@ -14,7 +14,7 @@ const Estates = () => {
 
     console.log(estates);
     return (
-        <div>
+        <div className="animate__animated animate__zoomInDown">
             <h3 className="text-center text-3xl md:text-4xl font-medium  md:font-semibold">Explore Good Places</h3>
             <p className=" text-center md:w-3/4 w-4/5 mx-auto mt-5 ">Discover charming neighborhoods, vibrant communities, and serene landscapes with Explore Good Places. Find your perfect home or vacation retreat in diverse destinations worldwide. Start your adventure today!</p>
 
