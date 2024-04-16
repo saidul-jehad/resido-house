@@ -36,7 +36,6 @@ const AuthProvider = ({ children }) => {
 
     const updateUserProfile = (name, photoUrl, email) => {
         setLoading(true)
-
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photoUrl,
@@ -52,7 +51,7 @@ const AuthProvider = ({ children }) => {
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
             console.log(currentUser);
-            setLoading(true)
+            setLoading(false)
         })
 
         return () => {
@@ -65,6 +64,7 @@ const AuthProvider = ({ children }) => {
         setClickMenu,
         clickMenu,
         loading,
+        setLoading,
         user,
         createUser,
         loginUser,

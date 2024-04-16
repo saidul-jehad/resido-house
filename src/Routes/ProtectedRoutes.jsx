@@ -10,7 +10,11 @@ const ProtectedRoutes = ({ children }) => {
     console.log(location);
 
     if (loading) {
-        <span className="loading loading-infinity loading-lg"></span>
+        console.log(loading);
+        return <div className="w-full flex justify-center">
+            <span className="loading loading-infinity w-24"></span>
+        </div>
+
     }
     if (user) {
         return children;
