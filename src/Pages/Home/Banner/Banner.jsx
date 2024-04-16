@@ -1,24 +1,20 @@
-
-// import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './Banner.css'
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import './styles.css';
+// import './Banner.css';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
-
-
 const Banner = () => {
     return (
-        <div className='hidden'>
+        <>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -31,38 +27,25 @@ const Banner = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-small-apartment-home-interior-decoration-style-photography-map-with-map-image_794336.jpg')]   ">
-
-
-                        <div className='flex justify-center h-[700px] border items-center'>
-                            <p className='text-5xl text-sky-400 font-bold'>
-                                <h3 >Your source for all </h3>
-                                <h3>your real estate needs</h3>
-                            </p>
-
-                        </div>
+                    <div className=" flex items-center justify-center flex-col gap-5 text-white bg-[url('https://cdna.artstation.com/p/assets/images/images/015/507/918/large/ahmed-mohamed-finish.jpg')] min-h-[700px] bg-no-repeat bg-cover">
+                        <h3 className='font-bold text-3xl text-center'>Discover Your Dream Home Today</h3>
+                        <p className='md:w-3/5 w-4/5 mx-auto'>Explore a curated collection of exquisite residences tailored to your lifestyle. Find the perfect blend of luxury, comfort, and sophistication in our premier residential estate listings. Start your journey now</p>
                     </div>
                 </SwiperSlide>
-
                 <SwiperSlide>
-
-                    <div className='bg-slate-500 min-h-screen'>
-                        <div className=" min-h-screen bg-[url('https://static.vecteezy.com/system/resources/previews/022/964/960/non_2x/mockup-poster-frame-on-the-wall-of-living-room-luxurious-apartment-background-with-contemporary-design-modern-interior-design-3d-render-3d-illustration-generate-ai-free-photo.jpg')]">
-
-                        </div>
+                    <div className=" flex items-center justify-center flex-col gap-5 text-white bg-[url('https://c0.wallpaperflare.com/preview/358/1019/781/living-room-apartment-room-interior.jpg')] min-h-[700px] bg-no-repeat bg-cover">
+                        <h3 className='font-bold text-3xl text-center'>Discover Your Dream Home Today</h3>
+                        <p className='md:w-3/5 w-4/5 mx-auto'>Explore a curated collection of exquisite residences tailored to your lifestyle. Find the perfect blend of luxury, comfort, and sophistication in our premier residential estate listings. Start your journey now</p>
                     </div>
-
                 </SwiperSlide>
-                <SwiperSlide>< img className='w-full rounded-lg' src="https://png.pngtree.com/thumb_back/fw800/background/20230718/pngtree-computer-generated-illustration-of-a-contemporary-and-lively-apartment-living-room-image_3900982.jpg" alt="" /></SwiperSlide>
-
                 <SwiperSlide>
-                    <div className='banner-bg w-full bg-no-repeat bg-cover'>
-dasocugAI
+                    <div className=" flex items-center justify-center flex-col gap-5 text-white bg-[url('https://img.freepik.com/free-photo/minimalist-black-interior-with-black-sofa_1268-31786.jpg')] min-h-[700px] bg-no-repeat bg-cover">
+                        <h3 className='font-bold text-3xl text-center'>Discover Your Dream Home Today</h3>
+                        <p className='md:w-3/5 w-4/5 mx-auto'>Explore a curated collection of exquisite residences tailored to your lifestyle. Find the perfect blend of luxury, comfort, and sophistication in our premier residential estate listings. Start your journey now</p>
                     </div>
                 </SwiperSlide>
-
             </Swiper>
-        </div>
+        </>
     );
 };
 

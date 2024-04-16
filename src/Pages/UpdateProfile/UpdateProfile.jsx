@@ -2,7 +2,7 @@ import React from 'react';
 
 const UpdateProfile = () => {
     return (
-        <div>
+        <div className='min-h-screen'>
             Update Profile
         </div>
     );
