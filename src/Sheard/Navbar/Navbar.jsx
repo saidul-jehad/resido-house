@@ -33,7 +33,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-xl rounded-md ">
+        <div className="navbar bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-xl rounded-md mb-[50px]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div onClick={() => setClickMenu(!clickMenu)} tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
