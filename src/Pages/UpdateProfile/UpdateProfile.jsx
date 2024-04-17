@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const UpdateProfile = () => {
 
@@ -18,6 +20,7 @@ const UpdateProfile = () => {
             .then(result => {
                 setLoading(false)
                 console.log(result);
+                toast.success('Profile Updated')
             })
 
     }
@@ -65,7 +68,7 @@ const UpdateProfile = () => {
                     <h3 className="text-center font-semibold text-2xl">Current Profile</h3>
 
                     <div>
-                        <img  className="h-14 w-14 rounded-full mx-auto" src={user.photoURL} alt="" />
+                        <img className="h-14 w-14 rounded-full mx-auto" src={user.photoURL} alt="" />
                     </div>
 
                     <h3><span className="text-xl font-medium">Name :</span> </h3>
@@ -76,6 +79,7 @@ const UpdateProfile = () => {
                     <p>{user.email ? user.email : <span>Email Not found</span>}</p>
 
                 </div>
+                <ToastContainer></ToastContainer>
             </div>
 
         </div>

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "property_quantity": " 0 Property",
+        "email": "john.smith@example.com",
+        "location": "New York, USA",
+        "phone": "+1 (555) 123-4567",
+        "image_url": "https://media.istockphoto.com/id/1367391515/photo/portrait-of-successful-businessman.jpg?s=612x612&w=0&k=20&c=COBjoH3I-mJcim_w8frbEfhFHW9pEvZf4FV_jjby3xo="
+    },
+    {
+        "id": 2,
+        "name": "Jane Doe",
+        "property_quantity": " 2 Properties",
+        "email": "jane.doe@example.com",
+        "location": "Los Angeles, USA",
+        "phone": "+1 (555) 987-6543",
+        "image_url": "https://media.istockphoto.com/id/1340973244/photo/confident-real-estate-agent-with-arms-crossed-looking-at-camera-standing-near-house.jpg?s=612x612&w=0&k=20&c=8CNq_MxcugIaMjr6YY7iRFZ5YU2CPxCSsypjf4K1rfE="
+    },
+    {
+        "id": 3,
+        "name": "Michael Johnson",
+        "property_quantity": "1 Properties",
+        "email": "michael.johnson@example.com",
+        "location": "Chicago, USA",
+        "phone": "+1 (555) 321-8765",
+        "image_url": "https://storeys.com/media-library/max-hasman.jpg?id=34015912&width=1245&height=700&quality=90&coordinates=0%2C0%2C0%2C62"
+    },
+    {
+        "id": 4,
+        "name": "Emily Brown",
+        "property_quantity": "3 Properties",
+        "email": "emily.brown@example.com",
+        "location": "Miami, USA",
+        "phone": "+1 (555) 567-8901",
+        "image_url": "https://sharpencx.com/wp-content/uploads/2020/09/happy-call-center-agent176084658-5-scaled-1.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "David Wilson",
+        "property_quantity": "0 Property",
+        "email": "david.wilson@example.com",
+        "location": "San Francisco, USA",
+        "phone": "+1 (555) 234-5678",
+        "image_url": "https://www.flatworldsolutions.com/featured-images/top-10-qualities-of-a-call-center-agent.jpg"
+    }
+]

@@ -13,6 +13,7 @@ const Navbar = () => {
         <li><NavLink to='/updateProfile'>Update Profile</NavLink></li>
         <li className={user && 'hidden'}><NavLink to='/login'>Login</NavLink></li>
         <li className={user && 'hidden'}><NavLink to='/register'>Register</NavLink></li>
+        <li ><NavLink to='/agentList'>Agent List</NavLink></li>
     </>
 
 
@@ -57,8 +58,8 @@ const Navbar = () => {
                 {
                     user ? <div className="flex  items-center gap-3 md:gap-6 ">
                         <p className="text-xl font-medium md:font-semibold hidden md:flex">{user.displayName}</p>
-                        <img data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName} className="h-14 w-14 rounded-full" src={user.photoURL} alt="" /> <div onClick={handleLogOut}><Link to='/login' className="btn btn-info">LogOut</Link></div> </div> :
-                        <Link to='/login' className="btn btn-info">Login</Link>
+                        <img data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName} className="h-14 w-14 rounded-full" src={user.photoURL} alt="" /> <div onClick={handleLogOut}><Link to='/login' className="btn text-white bg-gradient-to-r from-sky-500 to-indigo-500">LogOut</Link></div> </div> :
+                        <Link to='/login' className="btn text-white bg-gradient-to-r from-sky-500 to-indigo-500">Login</Link>
                 }
                 <Tooltip id="my-tooltip" />
             </div>

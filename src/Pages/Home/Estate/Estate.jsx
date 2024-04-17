@@ -36,7 +36,7 @@ const Estate = ({ estate }) => {
 
                 <div className='justify-end flex  mt-2'>
 
-                    <Link to={`/estateDetails/${id}`}><button className=' btn px-5 btn-info '>View</button></Link>
+                    <Link to={`/estateDetails/${id}`}><button className=' btn px-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white '>View</button></Link>
                 </div>
             </div>
             {/* <div className="badge badge-secondary">NEW</div> */}

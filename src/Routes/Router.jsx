@@ -7,6 +7,7 @@ import Error from "../Pages/Error/Error";
 import EstateDetails from "../Pages/Home/EstateDetails/EstateDetails";
 import ProtectedRoutes from "./ProtectedRoutes";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import AgentLists from "../Pages/AgentList/AgentLists";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,12 @@ const router = createBrowserRouter([
             {
                 path: '/updateProfile',
                 element: <ProtectedRoutes><UpdateProfile></UpdateProfile></ProtectedRoutes>
+            },
+
+            {
+                path:'/agentList',
+                element: <ProtectedRoutes><AgentLists></AgentLists></ProtectedRoutes>,
+                loader: () => fetch('agentList.json')
             }
 
         ]
