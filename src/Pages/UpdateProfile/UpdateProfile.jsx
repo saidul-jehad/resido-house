@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Helmet } from "react-helmet";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
-
+import 'animate.css';
 
 const UpdateProfile = () => {
 
@@ -30,7 +30,7 @@ const UpdateProfile = () => {
             <Helmet><title>Resido | Update Profile</title></Helmet>
 
             <div className="flex md:flex-row gap-14 flex-col-reverse">
-                <div className="flex-1">
+                <div className="flex-1 animate__animated animate__lightSpeedInRight border p-6 rounded-xl">
                     <h3 className="text-center font-semibold text-2xl">Update Profile</h3>
                     <form className="card-body" onSubmit={handleSaveAndChange}>
 
@@ -63,7 +63,7 @@ const UpdateProfile = () => {
                     </form>
 
                 </div>
-                <div className="flex-1 px-8 space-y-6">
+                <div className="flex-1 px-8 space-y-6 animate__animated animate__lightSpeedInLeft border p-6 rounded-xl">
 
                     <h3 className="text-center font-semibold text-2xl">Current Profile</h3>
 

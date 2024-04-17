@@ -2,12 +2,13 @@
 import { GoMail } from "react-icons/go";
 import { MdOutlineLocationOn } from "react-icons/md";
 import PropTypes from 'prop-types';
+import 'animate.css';
 
 const Agent = ({ agent }) => {
     const { image_url, phone, email, location, property_quantity, id, name } = agent;
 
     return (
-        <div className="card card-compact bg-base-100 shadow-xl border">
+        <div className={`card card-compact bg-base-100 shadow-xl border animate__animated mt-16 ${id % 2 === 0 ? 'animate__lightSpeedInRight' : 'animate__lightSpeedInLeft'}`}>
             <figure className="p-6"><img className="rounded-xl" src={image_url} alt="Shoes" /></figure>
             <div className="card-body">
 
@@ -35,7 +36,7 @@ const Agent = ({ agent }) => {
     );
 };
 
-Agent.propTypes ={
+Agent.propTypes = {
     agent: PropTypes.object
 }
 
