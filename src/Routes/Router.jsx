@@ -8,6 +8,7 @@ import EstateDetails from "../Pages/Home/EstateDetails/EstateDetails";
 import ProtectedRoutes from "./ProtectedRoutes";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import AgentLists from "../Pages/AgentList/AgentLists";
+import UserProfile from "../Pages/UserProfile/UserProfile";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,12 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
+                path: '/userProfile',
+                element: <ProtectedRoutes><UserProfile></UserProfile></ProtectedRoutes>
+
+            },
+
+            {
                 path: '/estateDetails/:id',
                 element: <ProtectedRoutes><EstateDetails></EstateDetails></ProtectedRoutes>,
                 loader: () => fetch('https://saidul24.github.io/estate-json-data/data.json')
@@ -40,7 +47,7 @@ const router = createBrowserRouter([
             },
 
             {
-                path:'/agentList',
+                path: '/agentList',
                 element: <ProtectedRoutes><AgentLists></AgentLists></ProtectedRoutes>,
                 loader: () => fetch('agentList.json')
             }
