@@ -19,7 +19,7 @@ const UpdateProfile = () => {
         updateUserProfile(name, photoUrl, email)
             .then(result => {
                 setLoading(false)
-                console.log(result);
+                // console.log(result);
                 toast.success('Profile Updated')
             })
 

@@ -12,7 +12,7 @@ const Estates = () => {
             .then(data => setEstates(data))
     }, [])
 
-    console.log(estates);
+    // console.log(estates);
     return (
         <div className="animate__animated animate__zoomInDown">
             <h3 className="text-center text-3xl md:text-4xl font-medium  md:font-semibold">Explore Good Places</h3>

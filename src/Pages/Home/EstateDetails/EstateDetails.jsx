@@ -6,10 +6,10 @@ const EstateDetails = () => {
     const estates = useLoaderData()
     const { id } = useParams()
     const pId = parseInt(id)
-    console.log(estates);
+    // console.log(estates);
     const estate = estates.find(estate => estate.id === pId)
     const { estate_title, segment_name, description, price, status, area, facilities, location, image } = estate
-    console.log(estate);
+    // console.log(estate);
 
 
     return (

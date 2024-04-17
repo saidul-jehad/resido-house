@@ -7,10 +7,10 @@ const ProtectedRoutes = ({ children }) => {
 
     const { user, loading } = useContext(AuthContext)
     const location = useLocation()
-    console.log(location);
+    // console.log(location);
 
     if (loading) {
-        console.log(loading);
+        // console.log(loading);
         return <div className="w-full flex justify-center">
             <span className="loading loading-infinity w-24"></span>
         </div>

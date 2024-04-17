@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 
 const Register = () => {
 
-    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const { createUser, updateUserProfile, setLoading } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false)
     const [passwordError, setPasswordError] = useState('')
     const [registerError, setRegisterError] = useState('')
@@ -46,16 +46,16 @@ const Register = () => {
             return
         }
 
-        console.log(name, photoUrl, email, password);
+        // console.log(name, photoUrl, email, password);
 
         // create user
         createUser(email, password)
             .then(result => {
                 updateUserProfile(name, photoUrl, email)
-
+                setLoading(false)
                 setRegisterSuccess('Account successfully created')
                 toast.success('Account successfully created')
-                console.log(result.user);
+                // console.log(result.user);
             })
             .catch(error => {
                 setRegisterError(error.message)

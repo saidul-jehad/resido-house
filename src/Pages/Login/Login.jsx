@@ -9,7 +9,7 @@ import {Helmet} from "react-helmet";
 const Login = () => {
     const location = useLocation()
     const navigate = useNavigate()
-    console.log('login page', location);
+    // console.log('login page', location);
 
     const { loginUser, googleLogin, githubLogin } = useContext(AuthContext)
     const [showPassword, setShowPassword] = useState(false)
@@ -21,7 +21,7 @@ const Login = () => {
 
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
         // reset
         setLoginError('')
@@ -32,13 +32,13 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 setLoginError('Email and Password dose not match')
                 toast.error('Email and Password dose not match')
-                console.log(error.message);
+                // console.log(error.message);
             })
     }
 
@@ -47,14 +47,14 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : '/')
 
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
                 // toast.error('Email and Password dose not match')
-                console.log(error.message);
+                // console.log(error.message);
             })
 
     }
@@ -64,13 +64,13 @@ const Login = () => {
             .then(result => {
                 setLoginSuccess("You have successfully logged in")
                 toast.success("You have successfully logged in")
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 // setLoginError('Email and Password dose not match')
                 // toast.error('Email and Password dose not match')
-                console.log(error.message);
+                // console.log(error.message);
             })
     }
 
